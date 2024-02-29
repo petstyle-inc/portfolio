@@ -164,6 +164,15 @@ h2{
     color: #FF52B4;
     text-align: center;
     padding: 20px;
+    margin-bottom: 0;
+}
+#home .sub-title{
+    color: #FEEEE3;
+    -webkit-text-stroke: 1px #FF52B4;
+    text-align: center;
+    font-family:'Noto Sans Japanese';
+    font-size: 30px;
+    font-weight: bold;
 }
 /* フッター
 ----------------------------- */
@@ -361,28 +370,82 @@ input[type="submit"]:hover{
 ----------------------------- */
 .grid{
     display: grid;
+    justify-content: space-between;
     gap: 26px;
-    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    grid-template-columns: 1fr;
     margin-top: 6%;
     margin-bottom: 50px;
     font-family: 'Noto Sans Japanese';
 }
-.item p{
+.section-container{
+    display: flex;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.item2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     font-family: 'Noto Sans Japanese';
     color: #666;
+    margin-right: 30px;
+    text-align: center;
+}
+.item2.special{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.item2 p{
+    flex: 2;
     margin: 0;
 }
-.item img{
+.item2.special p{
+    margin-left: 100px;
+    text-align: left;
+}
+.item2 img{
+    flex: 1;
+    margin-right: 10px;
     width: 100%;
-    height: auto;
+    height: 300px;
+    object-fit: cover;
     max-width: none;
     padding: 5px;
     border: 1px solid #666;
+}
+.item2.special img{
+    margin-left: 100px;
+    border: none;
+}
+h2{
+    text-align: center;
+    color: #666;
+}
+.detail-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5800;
+    color: #FEEEE3;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.detail-button:hover{
+    background-color: #FF5800;
+    opacity: 0.33;
 }
 /* モバイル版 */
 @media(max-width:600px){
     .page-title{
         font-size: 2rem;
+    }
+    body {
+        margin-top: 190px;
     }
     /* HEADER */
     .main-nav{
@@ -401,6 +464,19 @@ input[type="submit"]:hover{
     #home .page-title{
         font-size: 2rem;
     }
+    #home .sub-title{
+        font-size: 1rem;
+    }
+    header, footer {
+        font-size: 2em;
+        padding: 20px;
+    }
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
     /* SERVICE */
     #service,#area{
         float: none;
@@ -416,6 +492,9 @@ input[type="submit"]:hover{
     #service section .text01,
     #service section h3.ttl {
         grid-column: span 1; 
+    }
+    #service h2{
+        margin-top: 130px;
     }
     /* AREA */
     #area {
@@ -433,6 +512,34 @@ input[type="submit"]:hover{
     /* WORK */
     .grid{
         margin-bottom: 30%;
+    }
+    .item2,.item2.special{
+        flex-direction: column;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+    .item2 img,.item2.special img{
+        margin:0 0;
+        display: flex;
+        justify-content: center;
+    }
+    .item2 p,.item2.special p{
+        margin-left: 0;
+        text-align: center;
+        flex: none;
+    }
+    .webdesign .section-container,.painting .section-container{
+        flex-direction: column;
+    }
+    .webdesign .item2 p,.painting .item2 img{
+        margin-left: 0;
+    }
+    .webdesign .item2 p,.painting .item2 p{
+        margin-left: 0;
+        text-align: center;
+    }
+    .webdesign .ttl{
+        margin-top: 60px;
     }
     /* CONTACT */
     input[type="text"],
