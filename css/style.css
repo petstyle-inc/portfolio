@@ -505,6 +505,9 @@ h2{
     .sns-info{
         margin-bottom: 30%;
     }
+    .wrapper2{
+        font-family: 'Noto Sans Japanese';
+    }
     #profile p.left, #profile p.right{
         text-align: center;
         padding: 0 4% 10% 4%;
@@ -512,6 +515,7 @@ h2{
     /* WORK */
     .grid{
         margin-bottom: 30%;
+        font-family: 'Noto Sans Japanese';
     }
     .item2,.item2.special{
         flex-direction: column;
@@ -546,5 +550,8 @@ h2{
     input[type="email"],
     textarea{
         max-width: 100%;
+    }
+    .contact{
+        font-family: 'Noto Sans Japanese';
     }
 }
