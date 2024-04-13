@@ -1,5 +1,5 @@
 <?php
 $settings = array(
-    'email' => 'akagi01freestyle@gmail.com',
+    'email' => 'akagi@freestyle-inc.jp',
     // 他の設定値もここに追加できます
 );
