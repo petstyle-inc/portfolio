@@ -366,6 +366,21 @@ input[type="submit"]:hover{
     color: #666;
     padding-bottom: 20px;
 }
+#mail{
+    border:none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1;
+    background-color:#FFB8B8;
+    padding:10px 5%;
+    border-radius:5px;
+    font-size: 1rem;
+    display:block;
+    margin: 0 480px 20px 480px;
+}
+#mail :hover{
+    color: #FF52B4;
+}
 /* WORK
 ----------------------------- */
 .grid{
