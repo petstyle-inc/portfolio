@@ -576,4 +576,7 @@ h2{
     #contact{
         font-family: 'Noto Sans Japanese';
     }
+    #mail{
+        margin: 0 5% 100px 5%;
+    }
 }
