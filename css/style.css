@@ -573,7 +573,10 @@ h2{
     textarea{
         max-width: 100%;
     }
-    #contact{
+    input[type="submit"]{
+        margin: 0 auto 0 auto;
+    }
+    #contact , #mail{
         font-family: 'Noto Sans Japanese';
     }
     #mail{
